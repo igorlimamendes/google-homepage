@@ -108,6 +108,7 @@ a {
             .main__form--submitBtn:hover {
                 border: 1px solid #ddd;
                 box-shadow: 0 1px 2px #ddd;
+                cursor: pointer;
             }
 
 /* Footer */
