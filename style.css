@@ -6,6 +6,19 @@ body {
     box-sizing: border-box;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+    a:hover {
+        text-decoration: underline;
+    }
+
 /* Header */
 .hea-nav {
     display: flex;
@@ -19,9 +32,6 @@ body {
     .hea-nav__ul {
         display: flex;
         flex-wrap: nowrap;
-        list-style: none;
-        padding: 0;
-        margin: 0;
     }
         .hea-nav__ul--li {
             margin: 0 8px;
@@ -33,19 +43,15 @@ body {
 
             .hea-nav__ul--li a {
                 color: #202124;
-                text-decoration: none;
                 line-height: 2.5;
             }
-                .hea-nav__ul--li a:hover {
-                    text-decoration: underline;
-                }
             
             .hea-nav__ul--li svg {
                 color: #000;
                 width: 16px;
                 height: 16px;
                 opacity: .5;
-                margin: 7px 6px 0 6px;
+                padding: 7px 6px;
                 text-decoration: none;
             }
                 .hea-nav__ul--li svg:hover {
@@ -62,3 +68,39 @@ body {
                 padding: 7px 12px;
                 border-radius: 2px;
             }
+                .hea-nav__ul--li button:hover {
+                    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+                }
+
+/* Footer */
+.foot {
+    border-top: 1px solid #ccc;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+    .foot__nav {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 11px 30px;
+        background-color: #f2f2f2;
+    }
+        .foot__nav ul {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+            .foot__nav__ul-1 li {
+                margin-right: 25px;
+            }
+            
+            .foot__nav__ul-2 li {
+                margin-left: 25px;
+            }
+
+                .foot__nav__ul--li a {
+                    color: #70757a;
+                    font-size: .9em;
+                }
