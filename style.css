@@ -77,47 +77,51 @@ a {
     margin: auto;
     text-align: center;
     margin-top: 130px;
+    padding: 0 10px;
 }
     .main__imgBox img {
         max-width: 100%;
     }
 
     .main__form {
-        width: 100%;
-        margin-top: 23px;
+        width: 580px;
+        margin: 23px auto 0;
     }
         .main__form__searchBox {
             border: 1px solid #ddd;
             border-radius: 25px;
+            margin-bottom: 29px;
             outline: none;
-            margin: 0 auto;
-            width: 580px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-around;
+            height: 42px;
         }
             .main__form__searchBox:hover {
                 box-shadow: 1px 1px 7px #cdcdcd;
             }
 
-            .main__form__searchBox input[type="text"] {
-                border: none;
-                outline: none;
-                width: 500px;
-                height: 44px;
-                font-size: 16px;
-            }
-
             .main__form__searchBox--search {
                 height: 16px;
                 position: relative;
-                top: 4px;
-                right: 5px;
+                top: 3px;
+                left: 7px;
                 opacity: .5;
+            }
+
+            .main__form__searchBox input[type="text"] {
+                border: none;
+                outline: none;
+                height: 37px;
+                min-width: 85%;
             }
             
             .main__form__searchBox--mic {
                 height: 20px;
                 position: relative;
-                top: 5px;
-                left: 0;
+                top: 3px;
+                right: 7px;
             }
                 .main__form__searchBox--mic:hover {
                     cursor: pointer;
@@ -129,7 +133,7 @@ a {
             justify-content: center;
         }
             .main__form__buttons--btn {
-                margin: 29px 4px;
+                margin: 4px;
                 border: 1px solid #f8f9fa;
                 background-color: #f8f9fa;
                 color: #3c4043;
