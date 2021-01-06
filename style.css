@@ -77,27 +77,51 @@ a {
     margin: auto;
     text-align: center;
     padding: 5px;
-    margin-top: 88px;
+    margin-top: 130px;
 }
     .main__form {
         width: 100%;
+        margin-top: 23px;
     }
-        .main__form--textBox {
-            display: block;
-            margin: 23px auto;
-            border-radius: 25px;
+        .main__form__searchBox {
             border: 1px solid #ddd;
-            padding: 13px 45px;
+            border-radius: 25px;
             outline: none;
-            width: 385px;
-            max-width: 100%;
+            margin: 0 auto;
+            width: 580px;
         }
-            .main__form--textBox:hover {
+            .main__form__searchBox:hover {
                 box-shadow: 1px 1px 7px #cdcdcd;
             }
 
+            .main__form__searchBox input[type="text"] {
+                border: none;
+                outline: none;
+                width: 500px;
+                height: 44px;
+                font-size: 16px;
+            }
+
+            .main__form__searchBox--search {
+                height: 16px;
+                position: relative;
+                top: 4px;
+                right: 5px;
+                opacity: .5;
+            }
+            
+            .main__form__searchBox--mic {
+                height: 20px;
+                position: relative;
+                top: 5px;
+                left: 0;
+            }
+                .main__form__searchBox--mic:hover {
+                    cursor: pointer;
+                }
+
         .main__form--submitBtn {
-            margin: 6px 4px;
+            margin: 29px 4px;
             border: 1px solid #f8f9fa;
             background-color: #f8f9fa;
             color: #3c4043;
