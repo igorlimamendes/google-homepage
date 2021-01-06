@@ -76,7 +76,6 @@ a {
 .main {
     margin: auto;
     text-align: center;
-    padding: 5px;
     margin-top: 130px;
 }
     .main__form {
@@ -142,6 +141,7 @@ a {
     left: 0;
     bottom: 0;
     width: 100%;
+    background-color: #f2f2f2;
 }
     .foot__nav {
         display: flex;
@@ -149,7 +149,6 @@ a {
         align-items: center;
         justify-content: space-between;
         padding: 11px 30px;
-        background-color: #f2f2f2;
     }
         .foot__nav ul {
             display: flex;
@@ -167,3 +166,24 @@ a {
                     color: #70757a;
                     font-size: .9em;
                 }
+
+/* Media queries */
+@media (max-width: 768px) {
+    .main__form__searchBox {
+        width: 480px;
+    }   
+        .main__form__searchBox input[type="text"] {
+            width: 400px;
+        }
+    
+    .foot {
+        height: 80px;
+    }
+        .foot__nav {
+            flex-direction: column;
+        }
+            .foot__nav__ul-2 {
+                order: -1;
+                margin-bottom: 20px;
+            }
+}
