@@ -168,19 +168,19 @@ a {
         justify-content: space-between;
         padding: 11px 30px;
     }
-        .foot__nav ul {
+        .foot__nav__ul {
             display: flex;
             flex-wrap: nowrap;
         }
-            .foot__nav__ul-1 li {
+            .foot__nav__ul:nth-of-type(1) li {
                 margin-right: 25px;
             }
             
-            .foot__nav__ul-2 li {
+            .foot__nav__ul:nth-of-type(2) li {
                 margin-left: 25px;
             }
 
-                .foot__nav__ul--li a {
+                .foot__nav__ul--a {
                     color: #70757a;
                     font-size: .9em;
                 }
@@ -193,7 +193,7 @@ a {
         .foot__nav {
             flex-direction: column;
         }
-            .foot__nav__ul-2 {
+            .foot__nav__ul:nth-of-type(2) {
                 order: -1;
                 margin-bottom: 20px;
             }
