@@ -24,13 +24,17 @@
     <!-- Main -->
     <main class="main">
         <div class="main__imgBox">
-            <img src="images/google-logo.png" alt="Google's logo">
+            <img src="images/google-logo.png" alt="Google's logo" class="main__imgBox--img">
         </div>
         <form action="#" class="main__form">
             <div class="main__form__searchBox">
-                <span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/709px-Vector_search_icon.svg.png" class="main__form__searchBox--search"></span>
-                <input type="text" autofocus>
-                <span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by voice" class="main__form__searchBox--mic"></span>
+                <div class="searchBox__searchIconBox">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/709px-Vector_search_icon.svg.png" class="searchBox__searchIconBox--img">
+                </div>
+                <input type="text" class="main__form__searchBox--input" autofocus>
+                <div class="searchBox__micBox">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by voice" class="searchBox__micBox--img">
+                </div>
             </div>
             <div class="main__form__buttons">
                 <input type="submit" value="Google Search" class="main__form__buttons--btn">

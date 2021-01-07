@@ -75,58 +75,61 @@ a {
 /* Main */
 .main {
     margin-top: 92px;
-    padding: 0 10px;
+    padding: 0 35px;
 }
     .main__imgBox {
         text-align: center;
     }
-        .main__imgBox img {
+        .main__imgBox--img {
             max-width: 100%;
         }
 
     .main__form {
-        width: 580px;
         margin: 23px auto 0;
     }
         .main__form__searchBox {
             border: 1px solid #ddd;
-            border-radius: 25px;
-            margin-bottom: 29px;
-            outline: none;
-            display: flex;
-            flex-flow: row wrap;
-            align-items: center;
-            justify-content: space-around;
             height: 44px;
+            border-radius: 25px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 580px;
+            margin: 0 auto 14.5px;
         }
             .main__form__searchBox:hover {
                 box-shadow: 1px 1px 7px #cdcdcd;
             }
 
-            .main__form__searchBox--search {
-                height: 16px;
-                position: relative;
-                top: 3px;
-                left: 6px;
-                opacity: .5;
+            .searchBox__searchIconBox {
+                width: 35px;
+                padding: 0 5px;
             }
+                .searchBox__searchIconBox--img {
+                    height: 16px;
+                    opacity: .5;
+                    margin: 3px 10px 0;
+                }
 
-            .main__form__searchBox input[type="text"] {
+            .main__form__searchBox--input {
                 border: none;
                 outline: none;
                 height: 37px;
-                min-width: 85%;
+                width: 100%;
             }
             
-            .main__form__searchBox--mic {
-                height: 20px;
-                position: relative;
-                top: 2px;
-                right: 10px;
+            .searchBox__micBox {
+                width: 35px;
+                padding: 0 7px;
             }
-                .main__form__searchBox--mic:hover {
-                    cursor: pointer;
+                .searchBox__micBox--img {
+                    height: 20px;
+                    margin: 3px 3px 0;
                 }
+                    .searchBox__micBox:hover {
+                        cursor: pointer;
+                    }
 
         .main__form__buttons {
             display: flex;
@@ -141,6 +144,7 @@ a {
                 padding: 9px 15px;
                 border-radius: 3px;
                 font-size: .9em;
+                margin-top: 14.5px;
             }
                 .main__form__buttons--btn:hover {
                     border: 1px solid #ddd;
