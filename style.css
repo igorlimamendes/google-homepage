@@ -36,17 +36,17 @@ a {
         .hea-nav__ul--li {
             margin: 0 8px;
         }
-            .text {
+            .hea-nav__ul--li:nth-child(-n+2) {
                 position: relative;
                 bottom: 1px;
             }
 
-            .hea-nav__ul--li a {
+            .hea-nav__ul--a {
                 color: #202124;
                 line-height: 2.5;
             }
             
-            .hea-nav__ul--li svg {
+            .hea-nav__ul--svg {
                 color: #000;
                 width: 16px;
                 height: 16px;
@@ -54,12 +54,12 @@ a {
                 padding: 7px 6px;
                 text-decoration: none;
             }
-                .hea-nav__ul--li svg:hover {
+                .hea-nav__ul--svg:hover {
                     opacity: 1;
                     cursor: pointer;
                 }
 
-            .hea-nav__ul--li button {
+            .hea-nav__ul--btn {
                 border: 1px solid #4285f4;
                 background-color: #4285f4;
                 outline: none;
@@ -68,7 +68,7 @@ a {
                 padding: 7px 12px;
                 border-radius: 2px;
             }
-                .hea-nav__ul--li button:hover {
+                .hea-nav__ul--btn:hover {
                     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
                 }
 
