@@ -36,11 +36,6 @@ a {
         .nav__ul--li {
             margin: 0 8px;
         }
-            .nav__ul--li:nth-child(-n+2) {
-                position: relative;
-                bottom: 1px;
-            }
-
             .nav__ul--a {
                 color: #202124;
                 line-height: 2.5;
